@@ -7,7 +7,7 @@
 
 ## # How to run ?
 * **Start App** `$ npm start`
-* **Testing By Typescript** `$ npm test:ts`
+* **Testing With Typescript** `$ npm test:ts`
 * **Build App** `$ npm run build`
 
 ## # Importing Allies
@@ -85,4 +85,5 @@
         * pages
   * utils
     * charts
+    * geoChart
 
