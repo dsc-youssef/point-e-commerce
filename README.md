@@ -36,10 +36,10 @@
 * [fake store](http://fakestoreapi.com/docs)
 
 ## Screen Shots
-[dark theme](./screenshots/screen-dark.png)
-[light theme](./screenshots/screen-light.png)
-[chart](./screenshots/screen-dark-charts.png)
-[table](./screenshots/screen-dark-table.png)
+<img src="./screenshots/screen-dark.png" alt="dark theme" />
+<img src="./screenshots/screen-light.png" alt="light theme" />
+<img src="./screenshots/screen-dark-table.png" alt="table" />
+<img src="./screenshots/screen-dark-charts.png" alt="chart" />
 
 ## # File Structure
 * config
