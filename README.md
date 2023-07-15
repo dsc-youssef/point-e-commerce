@@ -35,6 +35,12 @@
 ## # Apis
 * [fake store](http://fakestoreapi.com/docs)
 
+## Screen Shots
+[dark theme](/screenshots/screen-dark.png)
+[light theme](/screenshots/screen-light.png)
+[chart](/screenshots/screen-dark-charts.png)
+[table](/screenshots/screen-dark-table.png)
+
 ## # File Structure
 * config
   * tailwind
