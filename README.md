@@ -30,6 +30,7 @@
 * [react-redux](https://react-redux.js.org) 
 * [reduxjs/toolkit](https://redux-toolkit.js.org) 
 * [redux](https://redux.js.org) 
+* [react-simple-maps](https://www.react-simple-maps.io/) 
 
 ## # Apis
 * [fake store](http://fakestoreapi.com/docs)
