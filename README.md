@@ -91,5 +91,5 @@
         * pages
   * utils
     * charts
-    * geoChart
+    * geoMap
 
