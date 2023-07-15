@@ -1,0 +1,23 @@
+.#{$DASHBOARD-PREFIX} {
+
+  @apply bg-[url("~/images/dashboard/light-background.svg")] bg-cover bg-no-repeat max-h-screen overflow-hidden;
+
+  &::-webkit-scrollbar, *::-webkit-scrollbar {
+    @apply w-[5px] h-[5px];
+  }
+
+  &::-webkit-scrollbar-track, *::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+
+  &::-webkit-scrollbar-thumb, *::-webkit-scrollbar-thumb {
+    @apply bg-secondary rounded hover:shadow-md hover:shadow-primary hover:bg-danger;
+  }
+
+  .dashboard-content {
+    @apply overflow-y-auto overflow-hidden py-6;
+    min-height: calc(100vh - 70px);
+    max-height: calc(100vh - 70px);
+
+  }
+}

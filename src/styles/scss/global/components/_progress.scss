@@ -1,0 +1,13 @@
+.progress {
+  @apply relative w-full bg-light h-[10px] rounded-full overflow-hidden transition-all;
+  &.progress-xs { @apply h-[2px]; }
+  &.progress-sm { @apply h-[3.5px]; }
+  &.progress-md { @apply h-[5px]; }
+  &.progress-lg { @apply h-[7px]; }
+  &.progress-xl { @apply h-[12px]; }
+  
+  > div {
+    @apply absolute top-0 left-0 h-full transition-all;
+  }
+  
+}

@@ -1,0 +1,6 @@
+.footer {
+  @apply w-full py-4 pt-10 text-center ;
+  .special {
+    @apply text-danger font-semibold;
+  }
+}

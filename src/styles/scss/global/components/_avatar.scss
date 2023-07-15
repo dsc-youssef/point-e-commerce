@@ -1,0 +1,39 @@
+.avatar {
+  @apply rounded-full flex items-center justify-center object-contain bg-cover;
+
+  &.avatar-dropdown {
+    @apply rounded-full overflow-hidden object-cover p-0 m-0;
+    &::after, &::before{
+      @apply hidden;
+    }
+  }
+
+  &.avatar-xs {
+    @apply w-[30px] min-h-[30px] text-xs;
+  }
+
+  &.avatar-sm {
+    @apply w-[35px] min-h-[35px] text-sm;
+  }
+
+  &.avatar-md {
+    @apply w-[40px] min-h-[40px] text-xl;
+  }
+
+  &.avatar-lg {
+    @apply w-[80px] min-h-[80px] text-3xl;
+  }
+
+  &.avatar-xl {
+    @apply w-[120px] min-h-[120px] text-4xl;
+  }
+
+  &.avatar-2xl {
+    @apply w-[140px] min-h-[140px] text-6xl;
+  }
+
+  &.avatar-3xl {
+    @apply w-[165px] min-h-[165px] text-8xl;
+  }
+
+}

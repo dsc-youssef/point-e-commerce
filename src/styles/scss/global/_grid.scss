@@ -1,0 +1,6 @@
+.row {
+  @apply p-0;
+  > [class*="col"]{
+    @apply pr-1;
+  }
+}

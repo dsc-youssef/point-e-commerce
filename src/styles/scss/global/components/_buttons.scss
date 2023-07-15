@@ -1,0 +1,11 @@
+.btn {
+  @apply select-none py-2 px-3 rounded mt-3  uppercase text-sm font-medium transition;
+
+  &:active {
+    @apply -translate-y-2;
+  }
+}
+
+.btn-loading {
+  @apply animate-pulse;
+}

@@ -1,0 +1,8 @@
+@import "./layout";
+
+.#{$DASHBOARD-PREFIX} {
+  @import "./components/components";
+  @import "./pages/pages";
+  @import "./dark_mode";
+  @import "./rtl";
+}

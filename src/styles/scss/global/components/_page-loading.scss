@@ -1,0 +1,11 @@
+.page-loading {
+  @apply w-screen h-screen bg-dark flex items-center justify-center;
+
+  .loading-logo {
+    @apply w-[130px] h-[130px];
+  }
+
+  .loading-spin {
+    @apply w-[70px] h-[70px] rounded-full border-4 border-warning border-t-transparent animate-spin mb-5;
+  }
+}

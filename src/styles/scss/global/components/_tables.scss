@@ -1,0 +1,28 @@
+.table {
+  .status {
+    @apply text-xs uppercase px-2 py-1 rounded font-semibold w-full min-w-[100px];
+
+    &.disabled {
+      @apply bg-danger text-white;
+    }
+
+    &.enabled {
+      @apply bg-success text-white;
+    }
+  }
+
+  th {
+    @apply text-sm whitespace-nowrap px-3 pb-3 text-center font-semibold;
+  }
+
+  td {
+    @apply border-b-0 text-xs font-normal whitespace-nowrap px-3 py-4 text-center;
+  }
+
+  tr {
+    @apply border-b;
+    &:last-child{
+      @apply border-none;
+    }
+  }
+}

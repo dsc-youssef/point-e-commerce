@@ -1,0 +1,38 @@
+.card {
+  @apply w-full rounded-lg transition bg-white;
+
+  &.off-canvas {
+    @apply rounded-none h-full;
+  }
+
+  .card-body,
+  .card-header,
+  .card-footer {
+    @apply w-full py-5 px-4;
+  }
+
+  .card-title {
+    @apply font-medium;
+  }
+
+  .card-paragraph {
+    @apply text-xs;
+  }
+
+  .details-block {
+    @apply flex gap-2 items-center;
+
+    .icon {
+      @extend .avatar;
+      @extend .avatar-md;
+    }
+
+    .state {
+      @apply text-sm flex flex-col flex-1;
+
+      .title {
+        @apply font-medium;
+      }
+    }
+  }
+}
