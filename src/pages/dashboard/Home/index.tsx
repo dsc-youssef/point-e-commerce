@@ -15,14 +15,13 @@ const SalesTopProducts = lazy(()=> import("./components/SalesTopProducts"));
 const SalesTable = lazy(()=> import("./components/SalesTable"));
 const BranchesMap = lazy(()=> import("./components/BranchesMap"));
 const TopOrders = lazy(()=> import("./components/TopOrders"));
+const TopClients = lazy(()=> import("./components/TopClients"));
 
 const Home: FC = () => {
 
 
   return (
-
     <main className="home-page">
-
       <Suspense fallback={<LoadingPlaceholder />}>
         <Row className="gap-7 lg:gap-0">
           <Col xs="12" lg="8">
@@ -32,9 +31,6 @@ const Home: FC = () => {
             <ExpensesChart />
           </Col>
         </Row>
-      </Suspense>
-
-      <Suspense fallback={<LoadingPlaceholder />}>
         <Row className="mt-8 gap-10 lg:gap-0">
           <Col xs="12" lg="4">
             <SalesTopProducts />
@@ -43,16 +39,17 @@ const Home: FC = () => {
             <SalesChart />
           </Col>
         </Row>
-      </Suspense>
-      <Suspense fallback={<LoadingPlaceholder />}>
         <Row className="mt-8">
           <Col xs="12">
             <SalesTable />
           </Col>
         </Row>
-      </Suspense>
-      <Suspense fallback={<LoadingPlaceholder />}>
-        <Row className="mt-8 gap-10 lg:gap-0">
+        <Row className="mt-8">
+          <Col xs="12">
+            <TopClients />
+          </Col>
+        </Row>
+        <Row className="mt-10 gap-10 lg:gap-0">
           <Col xs="12" lg="5">
             <BranchesMap />
           </Col>
@@ -62,7 +59,6 @@ const Home: FC = () => {
         </Row>
       </Suspense>
     </main>
-
   )
 }
 

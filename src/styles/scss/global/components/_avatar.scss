@@ -1,5 +1,5 @@
 .avatar {
-  @apply rounded-full flex items-center justify-center object-contain bg-cover;
+  @apply rounded-full flex items-center justify-center object-fill bg-cover;
 
   &.avatar-dropdown {
     @apply rounded-full overflow-hidden object-cover p-0 m-0;
