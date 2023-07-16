@@ -8,8 +8,8 @@ const TopClients = ()=>{
 	const clients = [
 	  {
 	    id: 1,
-	    first_name: "Youssef",
-	    last_name: "Bibabwy",
+	    first_name: "Michael",
+	    last_name: "Johnson",
 	    purchases: 405.20,
 	    image: "https://t3.ftcdn.net/jpg/02/99/04/20/360_F_299042079_vGBD7wIlSeNl7vOevWHiL93G4koMM967.jpg"
 	  },
@@ -84,14 +84,14 @@ const TopClients = ()=>{
 				<h3 className="card-title text-xl">Top Clients</h3>
 				<p className="card-paragraph">Top 10 Clients This Week.</p>
 			</div>
-			<div className="card-body snap-x flex items-center justify-center gap-2 overflow-x-auto">
+			<div className="card-body snap-x flex items-center gap-2 overflow-x-auto">
 				{
 					clients.map((client)=> (
 						<article className="cursor-pointer snap-center flex flex-col items-center justify-center min-w-[250px] transition-all hover:-translate-y-5" key={client.id}>
 							<img className="avatar avatar-lg" src={client.image} />
 							<div className="mt-4 flex flex-col items-center justify-center gap-0">
 								<h2>{client.first_name} {client.last_name}</h2>
-								<p className="text-danger font-semibold">$ {client.purchases}</p>
+								<p className="text-danger font-semibold">$ {(client.purchases).toFixed(2)}</p>
 							</div>
 						</article>
 					))
