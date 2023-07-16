@@ -32,7 +32,7 @@
     }
 
     .sidebar-button {
-      @apply line-clamp-1 min-w-full text-sm flex items-center outline-none border-none overflow-hidden font-medium transition-all relative py-3 px-2 text-white/80 my-[.2rem] select-none;
+      @apply line-clamp-1 min-w-full text-sm flex items-center outline-none border-none overflow-hidden font-medium transition-all relative py-3 px-2 text-white/80 my-[.2rem] select-none min-h-[45px];
 
       &.active {
         @apply text-white/100 bg-secondary/20;

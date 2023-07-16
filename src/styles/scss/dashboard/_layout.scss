@@ -15,9 +15,8 @@
   }
 
   .dashboard-content {
-    @apply overflow-y-auto overflow-hidden py-6;
+    @apply overflow-y-auto overflow-hidden  py-6;
     min-height: calc(100vh - 70px);
     max-height: calc(100vh - 70px);
-
   }
 }

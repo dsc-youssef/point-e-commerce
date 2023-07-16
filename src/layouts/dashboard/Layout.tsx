@@ -34,6 +34,7 @@ const DashboardLayout: FC = () => {
               <Header />
               <Outlet />
               <Footer />
+                 
             </Container>
           </div>
         </Col>

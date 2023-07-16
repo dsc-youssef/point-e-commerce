@@ -16,6 +16,8 @@ const Users = lazy(() => import("@/pages/dashboard/Users"));
 const Profile = lazy(() => import("@/pages/dashboard/Profile"));
 const Roles = lazy(() => import("@/pages/dashboard/Roles"));
 const Orders = lazy(() => import("@/pages/dashboard/Orders"));
+const Employees = lazy(() => import("@/pages/dashboard/Employees"));
+const Branches = lazy(() => import("@/pages/dashboard/Branches"));
 
 const dashboardRoutes: RouteObject[] = [
   {
@@ -46,7 +48,7 @@ const dashboardRoutes: RouteObject[] = [
     key: "",
     element: Products,
     name: "Products",
-    icon: "gifts"
+    icon: "backpack"
   },
   {
     path: "/newSale",
@@ -77,6 +79,16 @@ const dashboardRoutes: RouteObject[] = [
     element: Expenses,
     name: "Expenses",
     icon: "hand-holding-dollar"
+  },
+  {
+    path: "/purchases",
+    layout: "website",
+    role: "global",
+    category: "",
+    key: "",
+    element: Employees,
+    name: "Purchases",
+    icon: "basket-shopping"
   },
   {
     path: "/customers",
@@ -118,7 +130,7 @@ const dashboardRoutes: RouteObject[] = [
     name: "Roles",
     icon: "flag"
   },
-    {
+  {
     path: "/orders",
     layout: "website",
     role: "global",
@@ -128,6 +140,27 @@ const dashboardRoutes: RouteObject[] = [
     name: "Orders",
     icon: "truck-fast"
   },
+  {
+    path: "/branches",
+    layout: "website",
+    role: "global",
+    category: "",
+    key: "",
+    element: Branches,
+    name: "Branches",
+    icon: "map-location"
+  },
+  {
+    path: "/employees",
+    layout: "website",
+    role: "global",
+    category: "",
+    key: "",
+    element: Employees,
+    name: "Employees",
+    icon: "people"
+  },
+
 ]
 
 export default dashboardRoutes;
