@@ -24,6 +24,16 @@ const Header:FC = ()=> {
   }), []);
   const [currentTime, setCurrentTime] = useState(new Date());
 
+  
+  // Full Screen
+  const fullScreen = ()=>{
+    if (!document.fullscreenElement) {
+      document.documentElement.requestFullscreen();
+    } else if (document.exitFullscreen) {
+      document.exitFullscreen();
+    }
+  }
+
   return (
     <header className="header ">
       <div className="right-side">
@@ -45,8 +55,12 @@ const Header:FC = ()=> {
               Dark / Light
             </div>
             <div className="dropdown-item" onClick={()=> dispatch(toggleDir())}>
-              <i className="fal fa-arrow-right" />
-              Right Direction
+              <i className="fal fa-right-left" />
+              Page Direction
+            </div>
+           <div className="dropdown-item" onClick={fullScreen}>
+              <i className="fal fa-expand" />
+              Full Screen
             </div>
           </div>
         </Dropdown.Menu>
