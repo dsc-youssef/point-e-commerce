@@ -16,4 +16,4 @@ const layoutSlicer = createSlice({
 });
 
 export default layoutSlicer.reducer;
-export const { toggleTheme, toggleDir, setTabName } = layoutSlicer.actions;
+export const { toggleTheme, toggleDir, setTabName, toggleFullScreen } = layoutSlicer.actions;
