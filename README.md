@@ -31,6 +31,7 @@
 * [reduxjs/toolkit](https://redux-toolkit.js.org)
 * [redux](https://redux.js.org)
 * [react-simple-maps](https://www.react-simple-maps.io/)
+* [react-fakers](https://github.com/restuwahyu13/react-fakers)
 
 ## # Apis
 * [fake store](http://fakestoreapi.com/docs)
