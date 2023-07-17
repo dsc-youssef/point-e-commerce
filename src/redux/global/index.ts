@@ -2,7 +2,7 @@
 import { combineReducers } from '@reduxjs/toolkit'
 
 // Reducers
-import layout from "./slicers/layout"
+import layout from "../dashboard/slicers/layout"
 
 export default combineReducers({
   layout

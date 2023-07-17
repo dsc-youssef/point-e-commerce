@@ -15,7 +15,7 @@ import { themeColors } from "@/utils/colors";
 import Progress from "@/components/global/Progress";
 
 const SalesChart: FC = () => {
-  const { createDataObject, createDatasetObject, createOptionsObject, createDatasetsArray, createLinearGradient} = useChart();
+  const { createDataObject, createDatasetObject, createOptionsObject, createDatasetsArray, createLinearGradient } = useChart();
   const { randNumbers } = useNumbers();
 
   const chartProductsSalesDataset = useMemo(() => createDatasetObject({
@@ -76,7 +76,7 @@ const SalesChart: FC = () => {
   });
 
   return (
-    <div className="card">
+    <div className="card card-container">
       <div className="card-header">
         <h3 className="card-title text-lg">Weekly Sales</h3>
         <p className="card-paragraph mt-1">Weekly Sales ( Orders & Products ).</p>
@@ -86,7 +86,7 @@ const SalesChart: FC = () => {
       </div>
       <div className="card-footer grid grid-cols-1 md:grid-cols-2 gap-7">
         <article className="details-block">
-          <i className="fal fa-ticket icon bg-danger text-white" />
+          <i className="fal fa-ticket icon bg-dash-danger text-white" />
           <div className="state">
             <h4 className="title">Orders</h4>
             <p className="font-medium">$ {randNumbers(0, 123124, true, 1)}</p>
@@ -94,7 +94,7 @@ const SalesChart: FC = () => {
           </div>
         </article>
         <article className="details-block">
-          <i className="fal fa-gift icon bg-warning text-white" />
+          <i className="fal fa-gift icon bg-dash-warning text-white" />
           <div className="state">
             <h4 className="title">Products</h4>
             <p className="font-medium">$ {randNumbers(0, 123124, true, 1)}</p>

@@ -1,0 +1,21 @@
+.header {
+  @apply py-4 mb-6 flex justify-between items-center;
+
+  .right-side {
+
+    .tab-name {
+      @apply font-medium text-xl;
+    }
+
+    .local-time {
+      @apply mt-1 text-sm;
+    }
+
+  }
+
+  .left-side {
+    @apply flex items-center gap-2;
+
+
+  }
+}

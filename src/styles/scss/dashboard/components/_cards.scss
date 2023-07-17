@@ -1,5 +1,9 @@
 .card {
-  @apply w-full rounded-lg transition bg-white;
+  @apply w-full rounded-lg transition;
+
+  &.card-container {
+    @apply bg-white;
+  }
 
   &.off-canvas {
     @apply rounded-none h-full;
@@ -35,4 +39,29 @@
       }
     }
   }
+}
+
+
+.details-card {
+  @extend .card;
+  @extend .card-body;
+  @apply flex flex-col gap-2;
+
+  .icon {
+    @extend .avatar;
+    @extend .avatar-sm;
+  }
+
+  .value {
+    @apply font-semibold text-lg;
+  }
+
+  .title {
+    @apply font-medium text-sm;
+  }
+
+  .extra {
+    @apply font-medium text-xs text-dash-primary;
+  }
+
 }

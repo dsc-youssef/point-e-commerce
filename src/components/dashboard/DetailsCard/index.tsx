@@ -8,10 +8,10 @@ import { NavLink } from "react-router-dom";
 import { DashboardDetailsCardProps } from "@/interfaces/dashboard/components/DetailsCard";
 
 const DetailsCard:FC<DashboardDetailsCardProps> = ({ title, value, className, to, icon })=> {
-  
+
   return (
     <div className={`details-card ${className}`}>
-    
+
      <div className="card-body">
         <h1 className="card-title">{value}</h1>
         <h6 className="card-paragraph">{title}</h6>

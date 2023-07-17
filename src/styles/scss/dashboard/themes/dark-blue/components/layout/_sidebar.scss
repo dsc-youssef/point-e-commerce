@@ -1,0 +1,10 @@
+.sidebar {
+  @apply bg-transparent;
+
+
+  @media (max-width: 1000px) {
+    &.active {
+      @apply bg-sky-950;
+    }
+  }
+}

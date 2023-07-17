@@ -2,27 +2,10 @@
 
   .details-cards {
     @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-2;
-    > .details-card {
-      @apply flex flex-col rounded py-4 px-3 gap-2;
-      .icon {
-        @extend .avatar;
-        @extend .avatar-sm;
-      }
-      .value {
-        @apply font-semibold text-lg;
-      }
-      .title {
-        @apply font-medium text-sm;
-      }
-      .extra {
-        @apply font-medium text-xs text-primary;
-      }
-
-    }
   }
 
   .cart-area {
-    @apply mt-5 mb-10 ;
+    @apply mt-5 mb-10;
   }
 
   .quick-create-area {
@@ -40,6 +23,7 @@
           .title {
             @apply uppercase font-medium;
           }
+
           .icon {
             @extend .avatar-md;
             @apply absolute -top-5 -left-2 shadow;

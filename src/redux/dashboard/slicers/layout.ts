@@ -5,7 +5,7 @@ import { createSlice } from "@reduxjs/toolkit";
 import { initialState } from "../initialStates/layout";
 
 // Actions
-import { layoutActions} from "../actions/layout";
+import { layoutActions } from "../actions";
 
 const layoutSlicer = createSlice({
   name: "layout",

@@ -3,11 +3,11 @@
     @apply text-xs uppercase px-2 py-1 rounded font-semibold w-full min-w-[100px];
 
     &.disabled {
-      @apply bg-danger text-white;
+      @apply bg-dash-danger text-white;
     }
 
     &.enabled {
-      @apply bg-success text-white;
+      @apply bg-dash-success text-white;
     }
   }
 
@@ -21,7 +21,8 @@
 
   tr {
     @apply border-b;
-    &:last-child{
+
+    &:last-child {
       @apply border-none;
     }
   }

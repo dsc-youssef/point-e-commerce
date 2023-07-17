@@ -1,4 +1,18 @@
-@import "./sidebar";
-@import "./navbar";
-@import "./header";
-@import "./footer";
+// Core Components
+@import "./avatar";
+@import "./buttons";
+@import "./cards";
+@import "./containers";
+@import "./covers";
+@import "./dropdowns";
+@import "./inputs";
+@import "./lists";
+@import "./progress";
+@import "./tables";
+
+
+// Structure Components
+@import "./layout/sidebar";
+@import "./layout/navbar";
+@import "./layout/header";
+@import "./layout/footer";

@@ -5,35 +5,35 @@ import { Dropdown } from "react-bootstrap";
 // Redux
 import { useSelector, useDispatch } from "react-redux";
 import { RootState } from "@/redux/store";
-import { toggleTheme, toggleDir, toggleFullScreen } from "@/redux/global/slicers/layout";
+import { toggleTheme, toggleDir, toggleFullScreen } from "@/redux/dashboard/slicers/layout";
 
 
-const Options:FC = ()=> {
-	const dispatch = useDispatch();
+const Options: FC = () => {
+  const dispatch = useDispatch();
 
-	return (
+  return (
     <Dropdown>
       <Dropdown.Toggle className=" bg-transparent">
-        <button className="fal fa-gear btn bg-danger text-white"></button>
+        <button className="fal fa-gear btn bg-dash-danger text-white"></button>
       </Dropdown.Toggle>
       <Dropdown.Menu className="shadow select-none">
         <div className="flex flex-col">
-          <div className="dropdown-item" onClick={()=> dispatch(toggleTheme())}>
+          <div className="dropdown-item" onClick={() => dispatch(toggleTheme())}>
             <i className="fal fa-moon" />
             Dark / Light
           </div>
-          <div className="dropdown-item" onClick={()=> dispatch(toggleDir())}>
+          <div className="dropdown-item" onClick={() => dispatch(toggleDir())}>
             <i className="fal fa-right-left" />
             Page Direction
           </div>
-         <div className="dropdown-item" onClick={()=> dispatch(toggleFullScreen())}>
+          <div className="dropdown-item" onClick={() => dispatch(toggleFullScreen())}>
             <i className="fal fa-expand" />
             Full Screen
           </div>
         </div>
       </Dropdown.Menu>
     </Dropdown>
-	)
+  )
 }
 
 export default Options;

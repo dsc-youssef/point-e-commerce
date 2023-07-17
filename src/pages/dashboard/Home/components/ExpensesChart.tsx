@@ -46,7 +46,7 @@ const SalesChart: FC = () => {
   });
 
   return (
-    <div className="card h-full">
+    <div className="card card-container h-full">
       <div className="card-header">
         <h3 className="card-title text-lg mb-1">Weekly Expenses</h3>
       </div>

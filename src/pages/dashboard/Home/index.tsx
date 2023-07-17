@@ -13,8 +13,8 @@ const ExpensesChart = lazy(()=> import("./components/ExpensesChart"));
 const SalesChart = lazy(()=> import("./components/SalesChart"));
 const SalesTopProducts = lazy(()=> import("./components/SalesTopProducts"));
 const SalesTable = lazy(()=> import("./components/SalesTable"));
-const BranchesMap = lazy(()=> import("./components/BranchesMap"));
-const TopOrders = lazy(()=> import("./components/TopOrders"));
+// const BranchesMap = lazy(()=> import("./components/BranchesMap"));
+// const TopOrders = lazy(()=> import("./components/TopOrders"));
 const TopClients = lazy(()=> import("./components/TopClients"));
 
 const Home: FC = () => {
@@ -49,14 +49,14 @@ const Home: FC = () => {
             <TopClients />
           </Col>
         </Row>
-        <Row className="mt-10 gap-10 lg:gap-0">
+        {/* <Row className="mt-10 gap-10 lg:gap-0">
           <Col xs="12" lg="5">
             <BranchesMap />
           </Col>
           <Col xs="12" lg="7">
             <TopOrders />
           </Col>
-        </Row>
+        </Row> */}
       </Suspense>
     </main>
   )

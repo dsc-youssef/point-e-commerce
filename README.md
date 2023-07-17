@@ -17,20 +17,20 @@
 
 ## # Libraries & Languages
 * ### You will find the libraries version in `package.json`
-* [SASS](https://sass-lang.com/) 
-* [TypeScript](https://www.typescriptlang.org) 
-* [Bootstrap](https://getbootstrap.com) 
-* [react-bootstrap](react-bootstrap.github.io) 
-* [Tailwind](https://tailwindcss.com) 
-* [PostCSS](https://postcss.org) 
-* [Axios](https://axios-http.com/docs/intro) 
-* [chart.js](https://www.chartjs.org) 
-* [react-chartjs-2](https://react-chartjs-2.js.org) 
-* [react-router](https://reactrouter.com) 
-* [react-redux](https://react-redux.js.org) 
-* [reduxjs/toolkit](https://redux-toolkit.js.org) 
-* [redux](https://redux.js.org) 
-* [react-simple-maps](https://www.react-simple-maps.io/) 
+* [SASS](https://sass-lang.com/)
+* [TypeScript](https://www.typescriptlang.org)
+* [Bootstrap](https://getbootstrap.com)
+* [react-bootstrap](react-bootstrap.github.io)
+* [Tailwind](https://tailwindcss.com)
+* [PostCSS](https://postcss.org)
+* [Axios](https://axios-http.com/docs/intro)
+* [chart.js](https://www.chartjs.org)
+* [react-chartjs-2](https://react-chartjs-2.js.org)
+* [react-router](https://reactrouter.com)
+* [react-redux](https://react-redux.js.org)
+* [reduxjs/toolkit](https://redux-toolkit.js.org)
+* [redux](https://redux.js.org)
+* [react-simple-maps](https://www.react-simple-maps.io/)
 
 ## # Apis
 * [fake store](http://fakestoreapi.com/docs)
@@ -85,7 +85,13 @@
     * scss
       * dashboard
         * components
+          * layout
         * pages
+        * themes
+          * dark
+            * components
+          * dark-blue
+            * components
       * global
         * components
         * pages

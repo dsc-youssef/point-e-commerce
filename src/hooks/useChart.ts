@@ -70,7 +70,7 @@ const useChart = () => {
     gradient.addColorStop(1, color2);
     return gradient;
   }
-  
+
 
   return {
     structure,

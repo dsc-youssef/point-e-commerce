@@ -3,7 +3,9 @@
 
   &.avatar-dropdown {
     @apply rounded-full overflow-hidden object-cover p-0 m-0;
-    &::after, &::before{
+
+    &::after,
+    &::before {
       @apply hidden;
     }
   }

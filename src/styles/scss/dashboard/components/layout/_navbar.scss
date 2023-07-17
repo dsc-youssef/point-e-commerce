@@ -5,7 +5,7 @@
     @apply px-7 flex items-center justify-between py-5 h-full;
 
     .logo-block {
-      @apply flex items-center gap-2 font-semibold text-info select-none;
+      @apply flex items-center gap-2 font-semibold text-dash-info select-none;
     }
 
     .nav-logo {
@@ -13,7 +13,7 @@
     }
 
     .nav-search {
-      @apply bg-dark/80 w-full h-full absolute transition-all top-0 left-0 z-20;
+      @apply bg-dash-dark/80 w-full h-full absolute transition-all top-0 left-0 z-20;
 
       .container {
         @apply flex items-center h-full justify-center gap-2 relative;
@@ -25,7 +25,7 @@
             @apply z-20 py-3;
 
             &:hover {
-              @apply bg-danger text-white;
+              @apply bg-dash-danger text-white;
             }
           }
         }
@@ -36,11 +36,11 @@
 
         .btn-search,
         .btn-close {
-          @apply m-0 text-white bg-primary flex items-center gap-2 text-sm;
+          @apply m-0 text-white bg-dash-primary flex items-center gap-2 text-sm;
         }
 
         .btn-close {
-          @apply bg-danger;
+          @apply bg-dash-danger;
         }
       }
 

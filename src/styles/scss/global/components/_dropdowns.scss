@@ -1,9 +1,0 @@
-.dropdown {
-
-  .dropdown-menu {
-    @extend .card;
-    .dropdown-item {
-      @apply px-4 py-2 text-sm flex items-center gap-2;
-    }
-  }
-}

@@ -4,11 +4,11 @@ import { FC } from "react";
 // Bootstrap Components
 import { Dropdown } from "react-bootstrap";
 
-const CreateModals:FC = ()=>{
-	return (
+const CreateModals: FC = () => {
+  return (
     <Dropdown>
       <Dropdown.Toggle className=" bg-transparent">
-        <button className="fal fa-pen btn bg-primary text-white"></button>
+        <button className="fal fa-pen btn bg-dash-primary text-white"></button>
       </Dropdown.Toggle>
       <Dropdown.Menu className="shadow select-none">
         <div className="flex flex-col">
@@ -51,7 +51,7 @@ const CreateModals:FC = ()=>{
         </div>
       </Dropdown.Menu>
     </Dropdown>
-	)
+  )
 }
 
 

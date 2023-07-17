@@ -1,8 +1,16 @@
 @import "./layout";
 
 .#{$DASHBOARD-PREFIX} {
+
+  // Core
   @import "./components/components";
   @import "./pages/pages";
-  @import "./dark_mode";
+
+  // Right To Left Mode
   @import "./rtl";
+
+  // Themes
+  @import "./themes/dark-blue/theme";
+  @import "./themes/dark/theme";
+
 }

@@ -1,5 +1,5 @@
 .screen-cover {
-  @apply bg-dark/60 w-screen h-screen fixed top-0 left-0;
+  @apply bg-dash-dark/60 w-screen h-screen fixed top-0 left-0;
 }
 
 .area-cover {
@@ -9,6 +9,7 @@
 .cover-in-front {
   @apply z-10;
 }
+
 .cover-behind {
   @apply z-0;
 }

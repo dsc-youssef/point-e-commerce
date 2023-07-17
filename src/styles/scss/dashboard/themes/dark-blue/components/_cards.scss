@@ -1,0 +1,13 @@
+.card {
+  &.card-container {
+    @apply bg-slate-950/0 text-white;
+
+    .card-title {
+      @apply text-dash-info text-xl;
+    }
+
+    .card-paragraph {
+      @apply text-sm;
+    }
+  }
+}

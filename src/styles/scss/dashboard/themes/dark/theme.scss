@@ -1,0 +1,14 @@
+&.dark {
+  @apply bg-[#1C1D1F];
+
+  // Theme Core
+  @import "./components/cards";
+  @import "./components/dropdowns";
+  @import "./components/tables";
+
+  // Theme Layout
+  @import "./components/layout/header";
+  @import "./components/layout/navbar";
+  @import "./components/layout/sidebar";
+
+}

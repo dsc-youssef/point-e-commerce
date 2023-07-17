@@ -1,0 +1,12 @@
+.header {
+  .right-side {
+    .tab-name {
+      @apply text-dash-warning;
+    }
+
+    .local-time {
+      @apply text-white;
+    }
+  }
+
+}

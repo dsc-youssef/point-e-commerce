@@ -5,7 +5,7 @@ import { FC, useMemo } from "react";
 
 const SalesTable: FC = () => {
 
-  const salesData = useMemo(()=> [
+  const salesData = useMemo(() => [
     {
       id: 1,
       number: 42135,
@@ -86,12 +86,12 @@ const SalesTable: FC = () => {
       status: "Open",
       date: "09-Sep-2023"
     }
-  ],[])
+  ], [])
 
 
 
   return (
-    <div className="card">
+    <div className="card card-container">
       <div className="card-header">
         <h1 className="card-title text-xl">Best Sales</h1>
         <p className="card-paragraph mt-1">Last Best 10 Sales in The Week.</p>
@@ -108,7 +108,7 @@ const SalesTable: FC = () => {
           </thead>
           <tbody>
             {
-              salesData.map((customer)=> (
+              salesData.map((customer) => (
                 <tr key={customer.id}>
                   <td>{customer.id}</td>
                   <td>{customer.number}</td>

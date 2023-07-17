@@ -16,25 +16,26 @@ import LAYOUT from "@/config/layout";
 
 // Default Components
 const Sidebar = lazy(() => import("@/components/dashboard/Sidebar"));
-const Navbar = lazy(()=> import("@/components/dashboard/Navbar"));
-const Header = lazy(()=> import("@/components/dashboard/Header"));
-const Footer = lazy(()=> import("@/components/dashboard/Footer"));
+const Navbar = lazy(() => import("@/components/dashboard/Navbar"));
+const Header = lazy(() => import("@/components/dashboard/Header"));
+const Footer = lazy(() => import("@/components/dashboard/Footer"));
 
 
 const DashboardLayout: FC = () => {
-  const layoutTheme = useSelector((state:RootState)=> state.global.layout.theme);
+  const layoutTheme = useSelector((state: RootState) => state.dashboard.layout.theme);
+
   return (
     <main className={`${LAYOUT.dashboard_prefix} ${layoutTheme}`} >
       <Row className="m-0 p-0">
         <Col className="m-0 p-0">
           <Navbar />
           <div className="w-full flex">
-          <Sidebar />
+            <Sidebar />
             <Container fluid className="dashboard-content">
               <Header />
               <Outlet />
               <Footer />
-                 
+
             </Container>
           </div>
         </Col>
