@@ -31,7 +31,7 @@ const dashboardRoutes: RouteObject[] = [
     icon: "grid"
   },
   {
-    path: "/information",
+    path: "information",
     layout: "website",
     role: "global",
     category: "",
@@ -41,7 +41,7 @@ const dashboardRoutes: RouteObject[] = [
     icon: "info-circle"
   },
   {
-    path: "/products",
+    path: "products",
     layout: "website",
     role: "global",
     category: "",
@@ -51,7 +51,7 @@ const dashboardRoutes: RouteObject[] = [
     icon: "backpack"
   },
   {
-    path: "/newSale",
+    path: "newSale",
     layout: "website",
     role: "global",
     category: "",
@@ -61,7 +61,7 @@ const dashboardRoutes: RouteObject[] = [
     icon: ""
   },
   {
-    path: "/sales",
+    path: "sales",
     layout: "website",
     role: "global",
     category: "",
@@ -71,7 +71,7 @@ const dashboardRoutes: RouteObject[] = [
     icon: "chart-line-up"
   },
   {
-    path: "/expenses",
+    path: "expenses",
     layout: "website",
     role: "global",
     category: "",
@@ -81,7 +81,7 @@ const dashboardRoutes: RouteObject[] = [
     icon: "hand-holding-dollar"
   },
   {
-    path: "/purchases",
+    path: "purchases",
     layout: "website",
     role: "global",
     category: "",
@@ -91,7 +91,7 @@ const dashboardRoutes: RouteObject[] = [
     icon: "basket-shopping"
   },
   {
-    path: "/customers",
+    path: "customers",
     layout: "website",
     role: "global",
     category: "",
@@ -101,7 +101,7 @@ const dashboardRoutes: RouteObject[] = [
     icon: "users"
   },
   {
-    path: "/users",
+    path: "users",
     layout: "website",
     role: "global",
     category: "",
@@ -111,7 +111,7 @@ const dashboardRoutes: RouteObject[] = [
     icon: "user-shield"
   },
   {
-    path: "/profile",
+    path: "profile",
     layout: "website",
     role: "global",
     category: "",
@@ -121,7 +121,7 @@ const dashboardRoutes: RouteObject[] = [
     icon: ""
   },
   {
-    path: "/roles",
+    path: "roles",
     layout: "website",
     role: "global",
     category: "",
@@ -131,7 +131,7 @@ const dashboardRoutes: RouteObject[] = [
     icon: "flag"
   },
   {
-    path: "/orders",
+    path: "orders",
     layout: "website",
     role: "global",
     category: "",
@@ -141,7 +141,7 @@ const dashboardRoutes: RouteObject[] = [
     icon: "truck-fast"
   },
   {
-    path: "/branches",
+    path: "branches",
     layout: "website",
     role: "global",
     category: "",
@@ -151,7 +151,7 @@ const dashboardRoutes: RouteObject[] = [
     icon: "map-location"
   },
   {
-    path: "/employees",
+    path: "employees",
     layout: "website",
     role: "global",
     category: "",
