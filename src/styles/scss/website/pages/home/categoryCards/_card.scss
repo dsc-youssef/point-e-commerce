@@ -1,0 +1,13 @@
+.categoryCard {
+  @apply rounded-[6px] bg-white p-5 inline-flex flex-col justify-center items-center gap-5 min-w-[220px] w-full h-full;
+  .category {
+    @apply text-h6 line-clamp-1 font-medium;
+  }
+  .image {
+    @apply object-center m-auto;
+  }
+  .btn-more {
+    @apply self-end inline-flex items-center justify-center rounded-full h-[36px] text-white w-[36px] bg-web-gray-200 cursor-pointer ;
+  }
+
+}

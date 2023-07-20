@@ -1,13 +1,3 @@
 .#{$GLOBAL-PREFIX} {
   @apply min-h-screen;
-
-  &.direction-ltr {
-    @apply font-poppins;
-    direction: ltr;
-  }
-
-  &.direction-rtl {
-    @apply font-cairo;
-    direction: rtl;
-  }
 }

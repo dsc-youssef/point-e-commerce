@@ -1,6 +1,8 @@
-# Product Management System
-<p>a Dashboard Template for Product Management System </p>
-<br />
+# Point E-commerce
+Our e-commerce project is a state-of-the-art platform that provides a streamlined shopping experience for customers. Built with cutting-edge technologies such as TypeScript, React, and Sass, our platform is designed to be fast, reliable, and secure.
+
+`Created By` [Dev.Youssef](https://www.facebook.com/YoussefBibawy1/)
+
 
 ## # Requirements
 * Install `Nodejs` <= v20.2.0
@@ -38,9 +40,11 @@
 
 ## Screen Shots
 <img src="./screenshots/screen-dark.png" alt="dark theme" />
-<img src="./screenshots/screen-light.png" alt="light theme" />
-<img src="./screenshots/screen-dark-table.png" alt="table" />
 <img src="./screenshots/screen-dark-charts.png" alt="chart" />
+<img src="./screenshots/website-1.png" alt="chart" />
+<img src="./screenshots/website-2.png" alt="chart" />
+<img src="./screenshots/website-3.png" alt="chart" />
+<img src="./screenshots/website-4.png" alt="chart" />
 
 ## # File Structure
 * config
@@ -52,25 +56,36 @@
   * images
     * dashboard
     * global
+    * website
 * src
   * apis
   * auth
   * components
     * global
     * dashboard
+    * website
   * config
   * hooks
   * interfaces
     * dashboard
     * global
+    * website
+    * models
     * hooks
   * layouts
     * dashboard
+    * website
   * pages
     * dashboard
     * global
+    * website
   * redux
     * dashboard
+      * actions
+      * initialStates
+      * slicers
+      * types
+    * website
       * actions
       * initialStates
       * slicers
@@ -82,6 +97,7 @@
       * types
   * routes
     * dashboard
+    * website
   * styles
     * scss
       * dashboard
@@ -94,6 +110,9 @@
           * dark-blue
             * components
       * global
+        * components
+        * pages
+      * website
         * components
         * pages
   * utils

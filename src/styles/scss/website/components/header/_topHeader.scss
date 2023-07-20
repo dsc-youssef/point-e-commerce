@@ -1,0 +1,45 @@
+.top-header {
+  @apply w-full py-[8px] inline-flex lg:border-b order-2 lg:order-1;
+
+  >.container {
+    @apply inline-flex justify-between items-center flex-col-reverse lg:flex-row;
+
+    >.btn-group {
+      @apply inline-flex items-center w-full lg:w-fit flex-col lg:flex-row;
+
+      .social-icons {
+        @apply hidden lg:inline-flex items-center gap-4 font-light;
+
+        >[class*="fa-"] {
+          @apply text-h6 cursor-pointer;
+        }
+
+      }
+
+      .placeholder-button {
+        @apply text-web-gray-600 hover:text-web-gray-700 transition-all px-0 py-2 lg:py-0 lg:px-5 w-full lg:w-fit lg:border-r;
+
+        .toggle-button {
+          @apply px-0 lg:px-3
+        }
+
+        &:last-child {
+          @apply border-none;
+        }
+
+        .link-button {
+          @apply w-full inline-flex items-center gap-1 text-p2;
+
+          >[class*="fa-"] {
+            @apply text-p1;
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+}

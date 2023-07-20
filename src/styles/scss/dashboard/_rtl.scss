@@ -1,24 +1,18 @@
 .#{$GLOBAL-PREFIX} {
   &.direction-rtl {
-
     .#{$DASHBOARD-PREFIX} {}
-
   }
-
 }
-
 
 /**/
 @media (max-width: 1000px) {
   .#{$DASHBOARD-PREFIX}{
     .sidebar {
       @apply fixed right-[-400px] left-auto;
-  
+
       &.active {
         @apply right-0 left-auto;
       }
     }
   }
 }
-
-/**/

@@ -1,0 +1,55 @@
+.header-body {
+  @apply py-[24px] w-full bg-white inline-flex order-1 lg:order-2;
+
+  >.container {
+    @apply flex items-center justify-between gap-10 lg:gap-20 flex-col lg:flex-row;
+
+    >div, form {
+      @apply flex items-center m-0 p-0 w-full lg:w-fit;
+    }
+
+    .logo-area {
+      @apply gap-7 justify-between;
+      .toggle-button {
+        @apply lg:hidden cursor-pointer;
+      }
+    }
+
+    .search-area {
+      @apply mx-auto flex-auto ;
+
+
+      .input-field {
+        @apply inline-flex items-center relative w-full;
+
+        .form-control {
+          @apply rounded-full px-4 pr-28 rounded-r-none w-full;
+        }
+
+        .select-box {
+          @apply absolute right-0 border-l text-web-gray-700
+        }
+
+      }
+
+      .btn {
+        @apply rounded-l-none h-full text-h6 py-[9.5px] border-none rounded-r-full
+      }
+
+    }
+
+    .special-buttons {
+      @apply gap-8;
+
+      button {
+        @apply text-web-gray-700 text-h6;
+
+        span {
+          @apply font-light font-semibold;
+        }
+      }
+    }
+
+  }
+
+}

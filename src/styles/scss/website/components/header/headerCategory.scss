@@ -1,0 +1,20 @@
+.header-category {
+  @apply lg:bg-web-primary-600 inline-flex w-full order-3 ;
+
+  >.container {
+    @apply flex-col lg:flex-row inline-flex items-center justify-center;
+
+    .category-select-box {
+      @apply py-3 lg:py-[10px] px-0 lg:px-[24px] w-full lg:w-fit lg:text-white lg:border-web-primary-700 text-p1 font-medium lg:border-r;
+
+      .toggle-button {
+        @apply whitespace-nowrap px-0;
+      }
+      .dropdown-menu {
+        @apply rounded-sm relative w-full lg:w-fit lg:absolute;
+      }
+
+    }
+  }
+
+}

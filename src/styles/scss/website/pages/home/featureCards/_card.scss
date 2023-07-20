@@ -1,0 +1,25 @@
+.feature-card {
+  @apply inline-flex flex-row justify-center items-center gap-[10px] p-5 w-full lg:border-r;
+
+  &:last-child {
+    @apply border-none;
+  }
+
+  .icon {
+    @apply text-4xl;
+  }
+
+  .feature-info {
+    @apply flex flex-col gap-[6px];
+
+    .title {
+      @apply text-h6 font-bold;
+    }
+
+    .content {
+      @apply text-p1;
+    }
+
+  }
+
+}

@@ -22,7 +22,7 @@ const Branches = lazy(() => import("@/pages/dashboard/Branches"));
 const dashboardRoutes: RouteObject[] = [
   {
     path: "",
-    layout: "website",
+    layout: "dashboard",
     role: "global",
     category: "",
     key: "",
@@ -32,7 +32,7 @@ const dashboardRoutes: RouteObject[] = [
   },
   {
     path: "information",
-    layout: "website",
+    layout: "dashboard",
     role: "global",
     category: "",
     key: "",
@@ -42,7 +42,7 @@ const dashboardRoutes: RouteObject[] = [
   },
   {
     path: "products",
-    layout: "website",
+    layout: "dashboard",
     role: "global",
     category: "",
     key: "",
@@ -52,7 +52,7 @@ const dashboardRoutes: RouteObject[] = [
   },
   {
     path: "newSale",
-    layout: "website",
+    layout: "dashboard",
     role: "global",
     category: "",
     key: "",
@@ -62,7 +62,7 @@ const dashboardRoutes: RouteObject[] = [
   },
   {
     path: "sales",
-    layout: "website",
+    layout: "dashboard",
     role: "global",
     category: "",
     key: "",
@@ -72,7 +72,7 @@ const dashboardRoutes: RouteObject[] = [
   },
   {
     path: "expenses",
-    layout: "website",
+    layout: "dashboard",
     role: "global",
     category: "",
     key: "",
@@ -82,7 +82,7 @@ const dashboardRoutes: RouteObject[] = [
   },
   {
     path: "purchases",
-    layout: "website",
+    layout: "dashboard",
     role: "global",
     category: "",
     key: "",
@@ -92,7 +92,7 @@ const dashboardRoutes: RouteObject[] = [
   },
   {
     path: "customers",
-    layout: "website",
+    layout: "dashboard",
     role: "global",
     category: "",
     key: "",
@@ -102,7 +102,7 @@ const dashboardRoutes: RouteObject[] = [
   },
   {
     path: "users",
-    layout: "website",
+    layout: "dashboard",
     role: "global",
     category: "",
     key: "",
@@ -112,7 +112,7 @@ const dashboardRoutes: RouteObject[] = [
   },
   {
     path: "profile",
-    layout: "website",
+    layout: "dashboard",
     role: "global",
     category: "",
     key: "",
@@ -122,7 +122,7 @@ const dashboardRoutes: RouteObject[] = [
   },
   {
     path: "roles",
-    layout: "website",
+    layout: "dashboard",
     role: "global",
     category: "",
     key: "",
@@ -132,7 +132,7 @@ const dashboardRoutes: RouteObject[] = [
   },
   {
     path: "orders",
-    layout: "website",
+    layout: "dashboard",
     role: "global",
     category: "",
     key: "",
@@ -142,7 +142,7 @@ const dashboardRoutes: RouteObject[] = [
   },
   {
     path: "branches",
-    layout: "website",
+    layout: "dashboard",
     role: "global",
     category: "",
     key: "",
@@ -152,7 +152,7 @@ const dashboardRoutes: RouteObject[] = [
   },
   {
     path: "employees",
-    layout: "website",
+    layout: "dashboard",
     role: "global",
     category: "",
     key: "",

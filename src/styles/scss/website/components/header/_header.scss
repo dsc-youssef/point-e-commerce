@@ -1,0 +1,16 @@
+.header {
+  @apply  w-full lg:h-full h-[90px] border-b lg:border-none bg-white inline-flex flex-col overflow-hidden lg:overflow-visible ;
+
+  &.active {
+    @apply h-full;
+  }
+
+  .block-title {
+    @apply lg:hidden w-full my-3 font-bold font-semibold text-web-gray-800
+  }
+
+  @import "./topHeader";
+  @import "./headerBody";
+  @import "./headerCategory.scss";
+
+}

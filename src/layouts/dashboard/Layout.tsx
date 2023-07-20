@@ -22,10 +22,10 @@ const Footer = lazy(() => import("@/components/dashboard/Footer"));
 
 
 const DashboardLayout: FC = () => {
-  const layoutTheme = useSelector((state: RootState) => state.dashboard.layout.theme);
+  const layoutSettings = useSelector((state: RootState) => state.dashboard.layout);
 
   return (
-    <main className={`${LAYOUT.dashboard_prefix} ${layoutTheme}`} >
+    <main className={`${LAYOUT.dashboard_prefix} ${layoutSettings.theme} direction-${layoutSettings.dir}`} >
       <Row className="m-0 p-0">
         <Col className="m-0 p-0">
           <Navbar />

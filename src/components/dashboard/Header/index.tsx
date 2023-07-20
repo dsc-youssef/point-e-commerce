@@ -12,7 +12,7 @@ const CreateModals = lazy(()=> import("./components/CreateModals")) ;
 
 const Header:FC = ()=> {
   // Redux
-  const current_tab = useSelector((state:RootState)=> state.global.layout.current_tab);
+  const current_tab = useSelector((state:RootState)=> state.dashboard.layout.current_tab);
   const tabName = useMemo(()=> current_tab, [current_tab]);
 
   // Date
