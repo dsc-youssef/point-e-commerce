@@ -24,24 +24,24 @@ const ProductLists: FC = () => {
 
 
   return (
-    <div className="w-full bg-web-gray-100 pt-[0.62rem] pb-[3.75rem] ">
+    <div className="product-lists">
       <div className="container">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-5">
+        <div className="products-container">
           <div>
             <BlockTitle title="Top Rated" />
-            <div className="flex flex-col gap-5">
+            <div className="products-col">
               { topRated.map((product)=> <span key={product.id}><Product name={product.name} image={product.image} rate={product.rate} price={product.price} /></span>)}
             </div>
           </div>
           <div>
             <BlockTitle title="BestSellers" />
-            <div className="flex flex-col gap-5">
+            <div className="products-col">
               { bestSellers.map((product)=> <span key={product.id}><Product name={product.name} image={product.image} rate={product.rate} price={product.price} /></span>)}
             </div>
           </div>
           <div>
             <BlockTitle title="Mega Offers" />
-            <div className="flex flex-col gap-5">
+            <div className="products-col">
               { megaOffers.map((product)=> <span key={product.id}><Product name={product.name} image={product.image} rate={product.rate} price={product.price} discount={product.discount} /></span>)}
             </div>
           </div>

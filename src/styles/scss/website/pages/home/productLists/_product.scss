@@ -1,0 +1,42 @@
+.product {
+  @apply w-full p-5 h-[10.5rem] flex gap-5 bg-white;
+  .product-image {
+    @apply h-full w-[6.875rem] flex items-center justify-center text-white;
+    >img {
+      @apply w-full h-full;
+    }
+  }
+  .product-info {
+    @apply flex flex-col gap-3;
+    .product-name {
+      @apply text-web-primary-700 font-medium text-p1;
+    }
+    .product-stars {
+      @apply flex gap-1 items-center;
+    }
+    .product-footer {
+      @apply flex justify-between items-center;
+
+      .price {
+        @apply font-bold text-h5;
+      }
+
+      .button {
+        @apply inline-flex items-center justify-center rounded-full h-[36px] text-white w-[36px] bg-web-gray-200 cursor-pointer ;
+      }
+
+      .product-discount-area {
+        @apply flex flex-col;
+
+        .price {
+          @apply text-web-danger-600;
+        }
+
+        .discount {
+          @apply text-p2 decoration-slice text-web-gray-900 line-through;
+        }
+      }
+
+    }
+  }
+}
