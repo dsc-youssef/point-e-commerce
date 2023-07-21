@@ -16,8 +16,8 @@ const ProductCard: FC<ProductProps> = ({ category, name, price, discount, classN
             <h4 className="price">${Number(price).toFixed(2)}</h4>
           ) : (
             <div className="discountBlock">
-              <h4 className="price">$ {Number(price).toFixed(2)}</h4>
-              <small className="discount">$ {Number(discount).toFixed(2)}</small>
+              <h4 className="price">$ {Number(price - discount).toFixed(2)}</h4>
+              <small className="discount">$ {Number(price).toFixed(2)}</small>
             </div>
           )
         }
