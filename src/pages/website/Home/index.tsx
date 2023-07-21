@@ -9,6 +9,7 @@ import CategoriesCards from "./components/Categories";
 import Bestsellers from "./components/Bestsellers";
 import BigDeals from "./components/BigDeals";
 import Brands from "@/components/website/Brands";
+import ProductLists from "./components/ProductLists";
 
 
 const Home: FC = () => {
@@ -27,6 +28,7 @@ const Home: FC = () => {
       <Bestsellers />
       <BigDeals />
       <Brands />
+      <ProductLists />
     </div>
   )
 }

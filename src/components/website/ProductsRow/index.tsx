@@ -12,7 +12,7 @@ const ProductsRow: FC<WebsiteDefaultProductsRowProps> = ({ products, scrolling }
     <div className={`productsRow ${scrolling && "scrolling"}`} >
       {
         typeof products === "object" && products.length > 0 ? products.map((product, index) => (
-          <ProductCard className="flex-1" discount={product.discount} key={index} category={product.category} name={product.name} images={product.images} price={product.price} />
+          <ProductCard className="flex-1" discount={product.discount} key={index} category={product.category} name={product.name} image={product.image} price={product.price} />
         )) : null
       }
     </div>

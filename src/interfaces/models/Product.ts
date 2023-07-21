@@ -1,9 +1,10 @@
 export interface ProductProps {
   name: string,
   description?: string,
-  price?: number,
+  price: number,
   discount?: number,
-  images: string[],
+  image?: string,
+  images?: string[],
   rate?: number,
   id?: number | string,
   key?: number | string,

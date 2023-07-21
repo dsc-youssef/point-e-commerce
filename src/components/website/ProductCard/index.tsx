@@ -4,12 +4,12 @@ import { FC } from "react";
 // Interface Props
 import { ProductProps } from "@/interfaces/models/Product";
 
-const ProductCard: FC<ProductProps> = ({ category, name, images, price, discount, className, key }) => {
+const ProductCard: FC<ProductProps> = ({ category, name, price, discount, className, key, image }) => {
   return (
     <div key={key} className={`${className} productCard`}>
       <span className="category">{category}</span>
       <h1 className="name" title={name}>{name}</h1>
-      <img className="image" src={images[0]} alt={name} />
+      <img className="image" src={image} alt={name} />
       <div className="footer">
         {
           !discount ? (
