@@ -3,26 +3,26 @@ import { RouteObject } from "@/interfaces/hooks/Route";
 
 const useRoute = () => {
 
-  /** 
+  /**
    * @desc This function using to create a valid route object.
-   * @param { RouteObject } route 
-   * @return RouteObject 
+   * @param { RouteObject } route
+   * @return RouteObject
    */
   const createRoute = (route: RouteObject): RouteObject => route;
 
-  /** 
+  /**
    * @desc This function using to create array of routes
-   * @param { RouteObject[] } routes 
-   * @return RouteObject[] 
+   * @param { RouteObject[] } routes
+   * @return RouteObject[]
    */
   const createRoutes = (routes: RouteObject[]): RouteObject[] => routes;
 
-  /** 
+  /**
    * @desc This function to check if user have access to this route.
    * @param { RouteObject } route
-   * @param { string[] } roles 
-   * @param { "object"|"boolean" } returned 
-   * @return boolean | RouteObject | null 
+   * @param { string[] } roles
+   * @param { "object"|"boolean" } returned
+   * @return boolean | RouteObject | null
    */
   const validateRoute = (route: RouteObject, roles: string[], returned: "object" | "boolean" = "boolean"): boolean | RouteObject | null => {
     if (returned === "boolean") {
@@ -33,11 +33,11 @@ const useRoute = () => {
     return null;
   };
 
-  /** 
+  /**
    * @desc This function to check if user have access to this routes.
    * @param { RouteObject[] } routes
    * @param { string[] } roles
-   * @return RouteObject[] 
+   * @return RouteObject[]
    */
   const validateRoutes = (routes: RouteObject[], roles: string[]): RouteObject[] => {
     const resultArray: RouteObject[] = [];
@@ -45,20 +45,12 @@ const useRoute = () => {
     return resultArray;
   }
 
-  /** 
-   * @desc This function using to avoid repeat layout condition.
-   * @param { string } layout 
-   * @param { string } path
-   * @return string
-   */
-  const layoutChecker = (layout: string, path: string): string => layout === "website" ? `/${path}` : `${layout}/${path}`;
-
   return {
     createRoute,
     createRoutes,
     validateRoute,
     validateRoutes,
-    layoutChecker
+
   };
 }
 

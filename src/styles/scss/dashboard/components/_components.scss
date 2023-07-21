@@ -1,18 +1,18 @@
 // Core Components
-@import "./avatar";
-@import "./buttons";
-@import "./cards";
-@import "./containers";
-@import "./covers";
-@import "./dropdowns";
-@import "./inputs";
-@import "./lists";
-@import "./progress";
-@import "./tables";
+@import "./core/avatar";
+@import "./core/buttons";
+@import "./core/cards";
+@import "./core/containers";
+@import "./core/covers";
+@import "./core/dropdowns";
+@import "./core/inputs";
+@import "./core/lists";
+@import "./core/progress";
+@import "./core/tables";
 
 
 // Structure Components
-@import "./layout/sidebar";
-@import "./layout/navbar";
-@import "./layout/header";
-@import "./layout/footer";
+@import "./sidebar";
+@import "./navbar";
+@import "./header";
+@import "./footer";

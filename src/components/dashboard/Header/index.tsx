@@ -1,6 +1,5 @@
 // Dependencies
 import { FC, useMemo, useState, lazy } from "react";
-import { Dropdown } from "react-bootstrap";
 
 // Redux
 import { useSelector } from "react-redux";

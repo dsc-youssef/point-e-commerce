@@ -11,7 +11,7 @@ export const layoutActions = {
   setTabName: (state: LayoutSlicerState, action: PayloadAction<string>) => {
     state.current_tab = action.payload;
   },
-  toggleFullScreen: (state: LayoutSlicerState) => {
+  toggleFullScreen: (_state: LayoutSlicerState) => {
     !document.fullscreenElement ? document.documentElement.requestFullscreen() : document.exitFullscreen()
   }
 }

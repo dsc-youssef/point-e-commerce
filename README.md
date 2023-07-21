@@ -57,6 +57,7 @@ Our e-commerce project is a state-of-the-art platform that provides a streamline
     * dashboard
     * global
     * website
+  * design
 * src
   * apis
   * auth

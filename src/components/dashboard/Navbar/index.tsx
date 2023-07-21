@@ -13,7 +13,7 @@ import LAYOUT from "@/config/layout";
 
 // Assets
 import userImage from "~/images/global/userAvatar.svg";
-
+import appLogo from "~/images/global/logo-light.png";
 
 
 const Navbar: FC = () => {
@@ -28,10 +28,10 @@ const Navbar: FC = () => {
         <div className="logo-block">
           <img
             className="nav-logo"
-            src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
+            src={appLogo}
             alt="Workflow"
           />
-          <h3>POINT</h3>
+
         </div>
         <div className={`nav-search ${!searchVisibility ? "hidden opacity-0" : ""}`}>
           <div className="container ">
@@ -50,7 +50,7 @@ const Navbar: FC = () => {
           <Dropdown>
             <Dropdown.Toggle className="avatar avatar-dropdown">
               <img
-                className="nav-logo"
+                className="nav-user-avatar"
                 src={userImage}
               />
             </Dropdown.Toggle>

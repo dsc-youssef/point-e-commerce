@@ -4,11 +4,11 @@
   .nav-container {
     @apply px-7 flex items-center justify-between py-5 h-full;
 
-    .logo-block {
-      @apply flex items-center gap-2 font-semibold text-dash-info select-none;
+    .nav-logo {
+      @apply h-8 w-20;
     }
 
-    .nav-logo {
+    .nav-user-avatar {
       @apply h-8 w-8;
     }
 

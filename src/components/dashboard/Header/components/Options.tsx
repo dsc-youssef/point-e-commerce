@@ -3,8 +3,7 @@ import { FC } from "react";
 import { Dropdown } from "react-bootstrap";
 
 // Redux
-import { useSelector, useDispatch } from "react-redux";
-import { RootState } from "@/redux/store";
+import { useDispatch } from "react-redux";
 import { toggleTheme, toggleDir, toggleFullScreen } from "@/redux/dashboard/slicers/layout";
 
 

@@ -2,7 +2,7 @@
 import { FC } from "react";
 
 // Interface Props
-import { ProgressProps } from "@/interfaces/global/components/Progress";
+import { ProgressProps } from "@/interfaces/dashboard/components/Progress";
 
 const Progress: FC<ProgressProps> = ({ fill, className, size }) => {
   let bg: string = "bg-dash-danger";
