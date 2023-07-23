@@ -5,7 +5,7 @@ import { FC, lazy } from "react";
 import { Outlet } from "react-router-dom";
 
 // Bootstrap Components
-import { Row, Col, Container } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 
 // Redux
 import { useSelector } from "react-redux";
@@ -15,9 +15,9 @@ import { RootState } from "@/redux/store";
 import LAYOUT from "@/config/layout";
 
 // Default Components
+const MainCover = lazy(() => import("@/components/dashboard/MainCover"));
 const Sidebar = lazy(() => import("@/components/dashboard/Sidebar"));
 const Navbar = lazy(() => import("@/components/dashboard/Navbar"));
-const Header = lazy(() => import("@/components/dashboard/Header"));
 const Footer = lazy(() => import("@/components/dashboard/Footer"));
 
 
@@ -26,20 +26,17 @@ const DashboardLayout: FC = () => {
 
   return (
     <main className={`${LAYOUT.dashboard_prefix} ${layoutSettings.theme} direction-${layoutSettings.dir}`} >
-      <Row className="m-0 p-0">
-        <Col className="m-0 p-0">
-          <Navbar />
-          <div className="w-full flex">
-            <Sidebar />
-            <Container fluid className="dashboard-content">
-              <Header />
-              <Outlet />
-              <Footer />
-
-            </Container>
+      <MainCover />
+      <Container fluid>
+        <div className="flex gap-5 my-10">
+          <Sidebar/>
+          <div className="page-content">
+            <Navbar />
+            <Outlet />
+            <Footer />
           </div>
-        </Col>
-      </Row >
+        </div>
+      </Container>
     </main>
   )
 }

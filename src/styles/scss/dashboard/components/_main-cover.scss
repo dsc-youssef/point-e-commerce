@@ -1,0 +1,6 @@
+.main-cover {
+  @apply w-full bg-dash-blue-500 h-[25.875rem] absolute top-0 left-0 -z-10 overflow-hidden;
+  .main-cover-lines {
+    @apply w-full h-full;
+  }
+}

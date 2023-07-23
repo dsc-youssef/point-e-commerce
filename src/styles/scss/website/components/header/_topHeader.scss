@@ -11,7 +11,7 @@
         @apply hidden lg:inline-flex items-center gap-4 font-light;
 
         >[class*="fa-"] {
-          @apply text-h6 cursor-pointer;
+          @apply text-wh6 cursor-pointer;
         }
 
       }
@@ -28,10 +28,10 @@
         }
 
         .link-button {
-          @apply w-full inline-flex items-center gap-1 text-p2;
+          @apply w-full inline-flex items-center gap-1 text-wp2;
 
           >[class*="fa-"] {
-            @apply text-p1;
+            @apply text-wp1;
           }
 
         }

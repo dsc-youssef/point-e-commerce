@@ -33,7 +33,7 @@
       }
 
       .btn {
-        @apply rounded-l-none h-full text-h6 py-[9.5px] border-none rounded-r-full
+        @apply rounded-l-none h-full text-wh6 py-[9.5px] border-none rounded-r-full
       }
 
     }
@@ -42,7 +42,7 @@
       @apply gap-8;
 
       button {
-        @apply text-web-gray-700 text-h6;
+        @apply text-web-gray-700 text-wh6;
 
         span {
           @apply font-light font-semibold;

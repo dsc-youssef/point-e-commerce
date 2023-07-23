@@ -2,14 +2,14 @@
   @apply relative inline-block;
 
   .toggle-button {
-    @apply inline-flex gap-2 px-3 text-p2 items-center w-full rounded-md;
+    @apply inline-flex gap-2 px-3 text-wp2 items-center w-full rounded-md;
   }
 
   .dropdown-menu {
     @apply bg-white z-50 origin-center shadow-sm border py-0 my-0 overflow-hidden border-web-gray-100 absolute left-0 mt-2 w-56 rounded-xl;
 
     .dropdown-menu-option {
-      @apply px-4 py-2 w-full text-left transition-all hover:bg-web-gray-100 text-web-gray-700 text-p2 inline-flex gap-2 items-center;
+      @apply px-4 py-2 w-full text-left transition-all hover:bg-web-gray-100 text-web-gray-700 text-wp2 inline-flex gap-2 items-center;
 
       &.selected {
         @apply bg-web-primary-100 text-web-gray-900;

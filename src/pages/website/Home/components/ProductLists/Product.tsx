@@ -23,7 +23,7 @@ const Product: FC<ProductProps> = ({ image, rate, price, discount, name }) => {
                 <span className="discount">$ {(price)?.toFixed(2)}</span>
               </div>
             ) : (
-              <span className="font-bold text-h5">$ {(price)?.toFixed(2)}</span>
+              <span className="font-bold text-wh5">$ {(price)?.toFixed(2)}</span>
             )
           }
           <button className="button fas fa-bag-shopping"></button>

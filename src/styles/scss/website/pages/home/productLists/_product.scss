@@ -9,7 +9,7 @@
   .product-info {
     @apply flex flex-col gap-3;
     .product-name {
-      @apply text-web-primary-700 font-medium text-p1;
+      @apply text-web-primary-700 font-medium text-wp1;
     }
     .product-stars {
       @apply flex gap-1 items-center;
@@ -18,7 +18,7 @@
       @apply flex justify-between items-center;
 
       .price {
-        @apply font-bold text-h5;
+        @apply font-bold text-wh5;
       }
 
       .button {
@@ -33,7 +33,7 @@
         }
 
         .discount {
-          @apply text-p2 decoration-slice text-web-gray-900 line-through;
+          @apply text-wp2 decoration-slice text-web-gray-900 line-through;
         }
       }
 

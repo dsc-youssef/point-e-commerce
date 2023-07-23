@@ -20,7 +20,7 @@ const useChart = () => {
   // This Function using To avoid CategoryScale Error ( IMPORTANT )
   Chart.register(CategoryScale);
 
-  /** 
+  /**
    * @desc This Function using To Create Chart Data Object
    * @param { ChartData } data
    * @default chartData
@@ -28,23 +28,23 @@ const useChart = () => {
    */
   const createDataObject = (data: ChartData = structure.data): ChartData<any> => data;
 
-  /** 
+  /**
    * @desc This Function using To Create Chart Options.
    * @param { ChartOptions } options
    * @default chartOptions
-   * @return `ChartOptions` 
+   * @return `ChartOptions`
    */
   const createOptionsObject = (options: ChartOptions = structure.options): ChartOptions<any> => options;
 
-  /** 
+  /**
    * @desc This Function using To Create a Dataset Object.
    * @param  { ChartDataset } dataset
    * @default chartDataset
-   * @return `ChartDataset` 
+   * @return `ChartDataset`
    */
   const createDatasetObject = (dataset: ChartDataset = structure.dataset): ChartDataset<any> => dataset;
 
-  /** 
+  /**
    * @desc This Function using To Create Array Of Dataset Objects.
    * @param { ChartDataset[] } datasets
    * @return `ChartDataset[]`
@@ -54,7 +54,7 @@ const useChart = () => {
   /**
    * @desc This Function using To Create a Linear Gradient Background or Shadow.
    * @tip This Function using in `backgroundColor` property inside chart `dataset`.
-   * @tip You Need To Change property `fill` from `false` => `true` to working. 
+   * @tip You Need To Change property `fill` from `false` => `true` to working.
    * @param { string } color1
    * @param { string } color2
    * @param { number } x1

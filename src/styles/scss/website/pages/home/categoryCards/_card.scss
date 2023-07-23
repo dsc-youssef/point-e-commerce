@@ -1,7 +1,7 @@
 .categoryCard {
   @apply rounded-[6px] bg-white p-5 inline-flex flex-col justify-center items-center gap-5 min-w-[220px] w-full h-full;
   .category {
-    @apply text-h6 line-clamp-1 font-medium;
+    @apply text-wh6 line-clamp-1 font-medium;
   }
   .image {
     @apply object-center m-auto;

@@ -1,99 +1,87 @@
 .sidebar {
-  @apply bg-teal-950 overflow-x-hidden overflow-y-auto shadow-none rounded-none min-w-[250px] max-h-full transition-all relative;
+  @apply w-[16.5625rem] bg-white rounded-dash-default p-6 shadow-dash-default;
 
-  >[class*="cover"] {
-    @apply opacity-0;
+
+  max-height: calc(100vh - 5rem) !important;
+
+  .sidebar-header {
+    @apply flex flex-col items-center justify-center gap-5 h-[50px] overflow-hidden;
   }
 
-  min-height: calc(100vh - 70px);
-  max-height: calc(100vh - 70px);
+  .sidebar-content {
+    @apply overflow-y-auto overflow-x-hidden;
+    max-height: calc(100% - 50px);
 
-  >.screen-cover {
-    @apply opacity-0 hidden;
-  }
-
-
-  .sidebar-body {
-    @apply flex h-auto flex-col min-w-[250px] w-full max-h-full py-4 px-0 overflow-y-auto overflow-x-hidden z-10 relative;
-
-
-
-    .sidebar-category {
-
-      .sidebar-category-head {
-        @apply text-white cursor-pointer flex justify-between items-center px-3 mt-3 mb-3 select-none;
-
-        .sidebar-category-title {
-          @apply m-0 w-auto uppercase text-sm font-semibold;
-        }
-
-      }
-
+    &::-webkit-scrollbar {
+      width: 0.4em;
     }
 
-    .sidebar-button {
-      @apply line-clamp-1 min-w-full text-sm flex items-center outline-none border-none overflow-hidden font-medium transition-all relative py-3 px-2 text-white/80 my-[.2rem] select-none min-h-[45px];
-
-      &.active {
-        @apply text-white/100 bg-dash-secondary/20;
-
-        &::after {
-          content: "";
-          @apply w-[4px] h-full bg-dash-secondary absolute left-0 top-0;
-        }
-      }
-
-      &:hover {
-        @apply text-white;
-      }
-
-      >.btn-icon {
-        @apply w-[50px] text-[1.1rem] text-center;
-      }
-
-      >.btn-title {
-        @apply p-0 m-0 capitalize whitespace-nowrap;
-      }
-
+    &::-webkit-scrollbar-track {
+      @apply bg-transparent;
     }
 
-  }
-}
+    &::-webkit-scrollbar-thumb {
+      @apply bg-transparent rounded-dash-default transition cursor-pointer;
+    }
 
-@media(min-width: 1001px) {
-  .sidebar {
-    &.active {
-      @apply min-w-0 max-w-[65px];
+    &:hover {
+      &::-webkit-scrollbar-thumb {
+        @apply bg-dash-blue-100 transition;
+      }
+    }
 
-      .sidebar-body {
-        .sidebar-category {
-          .sidebar-category-head {
-            @apply w-fit px-7;
+    .sidebar-body {
+      @apply py-[1.41rem];
+
+
+      .btn-sidebar {
+        @apply transition-all rounded-[0.5rem] px-4 py-3 w-full text-start flex gap-2 items-center text-dxs font-bold cursor-pointer;
+
+
+        .btn-icon {
+          @apply transition-all text-dash-blue-500 w-[1.875rem] h-[1.875rem] flex items-center justify-center rounded-lg;
+        }
+
+        .btn-title {
+          @apply transition-all text-dash-gray-400;
+        }
+
+        &.active {
+          @apply shadow-dash-default;
+
+          .btn-icon {
+            @apply text-white bg-dash-blue-500;
           }
 
-          .sidebar-category-title {
-            @apply hidden;
+          .btn-title {
+            @apply text-dash-gray-700;
           }
         }
+      }
 
-        .sidebar-button {
-          @apply gap-8;
-        }
+      .sidebar-label {
+        @apply text-dash-gray-700 text-dxs uppercase font-bold mx-4 my-3 inline-block;
+      }
+
+    }
+
+
+    .sidebar-footer {
+      @apply flex flex-col items-center justify-center w-full mt-4;
+
+      .documentation-info-title {
+        @apply text-dsm font-bold text-dash-gray-700;
+      }
+
+      .documentation-info-text {
+        @apply text-dash-gray-500 text-dxs;
+      }
+
+      .btn {
+        @apply mt-8 w-full bg-dash-blue-500 text-white;
       }
     }
   }
-}
 
-@media (max-width: 1000px) {
-  .sidebar {
-    @apply fixed left-[-400px] top-0;
 
-    &.active {
-      @apply left-0 transition-all z-50 min-h-screen max-h-screen;
-
-      >.screen-cover {
-        @apply block opacity-100;
-      }
-    }
-  }
 }

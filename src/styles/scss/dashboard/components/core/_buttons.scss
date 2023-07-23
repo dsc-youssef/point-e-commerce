@@ -1,11 +1,7 @@
 .btn {
-  @apply select-none py-2 px-3 rounded mt-3  uppercase text-sm font-medium transition;
+  @apply flex items-center justify-center text-[10px] uppercase font-bold p-[.56rem] rounded-[.5rem];
 
-  &:active {
-    @apply -translate-y-2;
+  &.btn-big {
+    @apply p-[0.62rem];
   }
-}
-
-.btn-loading {
-  @apply animate-pulse;
 }

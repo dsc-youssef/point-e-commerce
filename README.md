@@ -116,6 +116,7 @@ Our e-commerce project is a state-of-the-art platform that provides a streamline
       * website
         * components
         * pages
+        * themes
   * utils
     * charts
     * geoMap

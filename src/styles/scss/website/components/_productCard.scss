@@ -1,12 +1,21 @@
 .productCard {
-  @apply inline-flex flex-col gap-5 p-5 rounded-[6px] border min-w-[200px] w-full h-full;
+  @apply inline-flex flex-col gap-5 p-5 rounded-[6px] border min-w-[200px] w-full h-full transition-all;
+
+  &:hover {
+    @apply -translate-y-3 shadow;
+    .footer {
+      .button {
+        @apply bg-web-primary-500 ;
+      }
+    }
+  }
 
   .category {
-    @apply text-p2 text-web-gray-700;
+    @apply text-wp2 text-web-gray-700;
   }
 
   .name {
-    @apply text-p1 font-medium text-web-primary-700 line-clamp-2;
+    @apply text-wp1 font-medium text-web-primary-700 line-clamp-2 cursor-pointer ;
   }
 
   .image {
@@ -23,11 +32,11 @@
     }
 
     .discount {
-      @apply text-p2 line-through;
+      @apply text-wp2 line-through;
     }
 
     .price {
-      @apply text-h5 font-bold;
+      @apply text-wh5 font-bold;
     }
 
     .button {

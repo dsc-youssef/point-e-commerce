@@ -1,42 +1,5 @@
 .#{$DASHBOARD-PREFIX} {
-  @apply  bg-cover bg-no-repeat max-h-screen overflow-hidden;
-
   &.direction-ltr {
-    @apply font-poppins;
-    direction: ltr;
-  }
-
-  &.direction-rtl {
-    @apply font-cairo;
-    direction: rtl;
-  }
-
-  &.light {
-    @apply bg-[url("~/images/dashboard/light-background.svg")];
-  }
-
-  &::-webkit-scrollbar,
-  *::-webkit-scrollbar {
-    @apply w-[3px] h-[4px];
-  }
-
-  &::-webkit-scrollbar-track,
-  *::-webkit-scrollbar-track {
-    @apply bg-transparent;
-  }
-
-  &::-webkit-scrollbar-thumb,
-  *::-webkit-scrollbar-thumb {
-    @apply bg-dash-secondary rounded;
-
-    &:hover {
-      @apply shadow-md shadow-dash-primary bg-dash-danger;
-    }
-  }
-
-  .dashboard-content {
-    @apply overflow-y-auto overflow-hidden py-6;
-    min-height: calc(100vh - 70px);
-    max-height: calc(100vh - 70px);
+    @apply font-nunito;
   }
 }

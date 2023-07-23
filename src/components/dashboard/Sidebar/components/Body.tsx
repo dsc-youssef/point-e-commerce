@@ -1,15 +1,14 @@
 // Dependencies
 import { FC, useMemo } from "react";
 
+// React Router
+import { NavLink } from "react-router-dom";
+
 // config
 import LAYOUT from "@/config/layout";
 
 // interface
 import { RouteObject } from "@/interfaces/hooks/Route";
-
-// Components
-import SidebarButton from "./Button";
-// import SidebarButtonsContainer from "./ButtonsContainer";
 
 // Redux
 import { useDispatch } from "react-redux";
@@ -22,7 +21,7 @@ import useRoute from "@/hooks/useRoute";
 import dashboardRoutes from "@/routes/dashboard";
 
 
-const Body: FC = () => {
+const SidebarBody:FC = ()=>{
   const dispatch = useDispatch();
   const { validateRoutes } = useRoute();
   const routes = useMemo(() => validateRoutes(dashboardRoutes, ["global"]), []);
@@ -30,20 +29,25 @@ const Body: FC = () => {
 
   return (
     <div className="sidebar-body">
+
       {
         routes.map((button: RouteObject, key: number) =>
           notEmptyRoute(button) && (
-            <SidebarButton
-              key={key}
-              title={button.name}
-              to={`${LAYOUT.dashboard_url}${button.path.replace("/", "")}`}
-              icon={button.icon}
-              onClick={() => dispatch(setTabName(button.name))} />
-          )
-        )
+          <NavLink
+            to={button.path}
+            className="btn-sidebar"
+            key={key}
+            onClick={()=> dispatch(setTabName(button.name))}
+            end >
+            <i className={`fas fa-${button.icon} btn-icon`} />
+            <span className="btn-title">{button.name}</span>
+          </NavLink>
+        ))
       }
+    {/* <label className="sidebar-label">ACCOUNT PAGES</label> */}
+
     </div>
   )
 }
 
-export default Body;
+export default SidebarBody;
