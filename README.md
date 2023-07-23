@@ -38,6 +38,9 @@ Our e-commerce project is a state-of-the-art platform that provides a streamline
 ## # Apis
 * [fake store](http://fakestoreapi.com/docs)
 
+## # UI Kits & Plan
+* [Figma UI Kits](https://drive.google.com/file/d/1HTEyqPJtRSjlQugHzGEDHP5VqFNDr9hf/view?usp=sharing)
+
 ## Screen Shots
 <img src="./screenshots/screen-dark.png" alt="dark theme" />
 <img src="./screenshots/screen-dark-charts.png" alt="chart" />
